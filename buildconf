@@ -1,0 +1,13 @@
+
+lib "buildconf" {
+    srcs="*.c";
+    export_includes="";
+    ignore_includes="";
+}
+
+exe "buildconf" {
+    entrypoint="main.c";
+    srcs="*.c";
+    libs="gl, mesa";
+    staticlibs="gl, mesa";
+}
